@@ -4,6 +4,8 @@ import './App.css';
 import Home from './Home'
 import NavBar from './NavBar'
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
+import About from './About'
+import Portfolio from './Portfolio'
 
 
 import React, { Component } from 'react';
@@ -16,7 +18,9 @@ class App extends Component {
         <>
         <NavBar />
 
-        <Route path="/Home" exact component={Home}/>
+        <Route path="/home" exact component={Home}/>
+        <Route path="/about" exact component={About}/>
+        <Route path="/portfolio" exact component={Portfolio}/>
         </>
       </div>
     );
