@@ -19,12 +19,15 @@ goToAbout= () => {
   render() {
     return (
       <div className='homeOutter'>
+        
         <div className='homeInner' onClick={this.goToPortfolio}>
         {this.state.showPortfolio && <Redirect to="/portfolio" />}
         <span> designer </span>
+
         </div>
         <div className='homeInner' onClick={this.goToAbout}>
         {this.state.showAbout && <Redirect to="/about" />}
+          <img src= 'https://www.frogdesign.com/wp-content/uploads/2018/11/Amrita-Marino-FrogDesign-TechTrendsHeader-1440x810-1024x576.gif' />
         <span>  developer  </span>
         </div>
 
