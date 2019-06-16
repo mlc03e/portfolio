@@ -42,7 +42,13 @@
   grid-column-gap: 15px;
 }
 .img-thumbnail {
-  
+  border-radius: 5em;
+}
+.demoVideo {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 15px;
 }
 @keyframes App-logo-spin {
   from {
