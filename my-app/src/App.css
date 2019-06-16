@@ -24,7 +24,16 @@
   color: #61dafb;
 }
 .navBar {
-  background-color: yellow;
+  background-color: #231f20;
+  display: grid;
+  grid-template-columns: 10% auto;
+
+}
+.links {
+  display: inline-block;
+  text-align: right;
+  margin-top: 6%;
+
 }
 .homeOutter {
   display: grid;
@@ -52,6 +61,13 @@
 }
 .desciption {
   margin-top: 50px;
+}
+/* .graphicDesign {
+  display: grid;
+
+} */
+.graphicDesign img {
+  max-height: 700px;
 }
 @keyframes App-logo-spin {
   from {

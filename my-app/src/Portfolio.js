@@ -31,11 +31,25 @@ class Portfolio extends Component {
             <p> JSON databse React frontend </p>
           </div>
         </div>
+        <div className='graphicDesign'>
+          <img src={require('./cards.jpg')} />
+          <img src={require('./campbell1.jpg')} />
+          <img src={require('./campbell2.jpg')} />
+          <img src={require('./campbell3.jpg')} />
+          <img src={require('./cryro1.png')} />
+          <img src={require('./cryro2.png')} />
+          <img src={require('./chrisCardFront.png')} />
+          <img src={require('./chrisCardBack.png')} />
+          <img src={require('./play.png')} />
+          <img src={require('./katelyn.png')} />
+        </div>
       </div>
     );
   }
 
 }
+
+
 // <div>
 // <Player>
 //   <source src={require("./ChickenFishSteak.1.mp4")}/>
