@@ -50,6 +50,9 @@
   grid-template-columns: auto auto;
   grid-column-gap: 15px;
 }
+.desciption {
+  margin-top: 50px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
