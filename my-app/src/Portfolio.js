@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-import { Player } from 'video-react';
+// import { Player } from 'video-react';
 
 class Portfolio extends Component {
 
@@ -31,17 +31,35 @@ class Portfolio extends Component {
             <p> JSON databse React frontend </p>
           </div>
         </div>
-        <div className='graphicDesign'>
-          <img src={require('./cards.jpg')} />
-          <img src={require('./campbell1.jpg')} />
-          <img src={require('./campbell2.jpg')} />
-          <img src={require('./campbell3.jpg')} />
-          <img src={require('./cryro1.png')} />
-          <img src={require('./cryro2.png')} />
-          <img src={require('./chrisCardFront.png')} />
-          <img src={require('./chrisCardBack.png')} />
-          <img src={require('./play.png')} />
-          <img src={require('./katelyn.png')} />
+        <h1> Graphic Design </h1>
+        
+        <div id="carouselExampleInterval" className="carousel-slide" data-ride="carousel">
+          <div className="carousel-inner">
+            <div className="carousel-item active" data-interval="500">
+              <img src={require('./cards.jpg')} className="d-block w-100" alt="..."/>
+            </div>
+            <div className="carousel-item" data-interval="500">
+              <img src={require('./campbell1.jpg')} className="d-block w-100" alt="..."/>
+              <img src={require('./campbell2.jpg')} className="d-block w-100" alt="..."/>
+              <img src={require('./campbell3.jpg')} className="d-block w-100" alt="..."/>
+            </div>
+            <div className="carousel-item" data-interval="500">
+              <img src={require('./cryro1.png')} className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item" data-interval="500">
+              <img src={require('./chrisCardFront.png')} className="d-block w-100" alt="..." />
+              <img src={require('./chrisCardBack.png')} className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item" data-interval="500">
+              <img src={require('./cryro2.png')} className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item" data-interval="500">
+              <img src={require('./play.png')} className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item" data-interval="500">
+              <img src={require('./katelyn.png')} className="d-block w-100" alt="..." />
+            </div>
+          </div>
         </div>
       </div>
     );
