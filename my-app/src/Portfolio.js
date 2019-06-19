@@ -32,23 +32,27 @@ class Portfolio extends Component {
           </div>
         </div>
         <h1> Graphic Design </h1>
-        
+
         <div id="carouselExampleInterval" className="carousel-slide" data-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active" data-interval="500">
               <img src={require('./cards.jpg')} className="d-block w-100" alt="..."/>
             </div>
             <div className="carousel-item" data-interval="500">
-              <img src={require('./campbell1.jpg')} className="d-block w-100" alt="..."/>
-              <img src={require('./campbell2.jpg')} className="d-block w-100" alt="..."/>
-              <img src={require('./campbell3.jpg')} className="d-block w-100" alt="..."/>
+              <div id= 'threeColumn'>
+                <img src={require('./campbell1.jpg')} className="d-block w-100" alt="..."/>
+                <img src={require('./campbell2.jpg')} className="d-block w-100" alt="..."/>
+                <img src={require('./campbell3.jpg')} className="d-block w-100" alt="..."/>
+              </div>
             </div>
             <div className="carousel-item" data-interval="500">
               <img src={require('./cryro1.png')} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item" data-interval="500">
-              <img src={require('./chrisCardFront.png')} className="d-block w-100" alt="..." />
-              <img src={require('./chrisCardBack.png')} className="d-block w-100" alt="..." />
+              <div id= 'twoColumn' >
+                <img src={require('./chrisCardFront.png')} className="d-block w-100" alt="..." />
+                <img src={require('./chrisCardBack.png')} className="d-block w-100" alt="..." />
+              </div>
             </div>
             <div className="carousel-item" data-interval="500">
               <img src={require('./cryro2.png')} className="d-block w-100" alt="..." />
