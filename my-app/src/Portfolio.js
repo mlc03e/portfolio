@@ -7,7 +7,7 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <div>
+      <div className= 'portolioPage'>
         <span> Web Development/App Design</span>
         <div className= 'demoVideo'>
           <div className="embed-responsive embed-responsive-21by9">
@@ -33,16 +33,21 @@ class Portfolio extends Component {
         </div>
         <h1> Graphic Design </h1>
 
-        <div id="carouselExampleInterval" className="carousel-slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" className="carousel-slide" data-ride="carousel">
+          
           <div className="carousel-inner">
             <div className="carousel-item active" data-interval="500">
               <img src={require('./cards.jpg')} className="d-block w-100" alt="..."/>
             </div>
             <div className="carousel-item" data-interval="500">
               <div id= 'threeColumn'>
-                <img src={require('./campbell1.jpg')} className="d-block w-100" alt="..."/>
-                <img src={require('./campbell2.jpg')} className="d-block w-100" alt="..."/>
-                <img src={require('./campbell3.jpg')} className="d-block w-100" alt="..."/>
+                <div></div>
+                <div id='magazine'>
+                  <img src={require('./campbell1.jpg')} className="d-block w-100" alt="..."/>
+                  <img src={require('./campbell2.jpg')} className="d-block w-100" alt="..."/>
+                  <img src={require('./campbell3.jpg')} className="d-block w-100" alt="..."/>
+                </div>
+                <div></div>
               </div>
             </div>
             <div className="carousel-item" data-interval="500">
@@ -64,7 +69,9 @@ class Portfolio extends Component {
               <img src={require('./katelyn.png')} className="d-block w-100" alt="..." />
             </div>
           </div>
+
         </div>
+
       </div>
     );
   }
