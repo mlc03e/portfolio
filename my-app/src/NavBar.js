@@ -6,8 +6,11 @@ class NavBar extends Component {
   render() {
     return (
       <div className='navBar'>
-        <img src= {require("./mc-logo.png")} />
-        <div className='links'>
+        <div>
+          <img src= {require("./mc-logo.png") } />
+          
+        </div>
+      <div className='links'>
           <Link to= "/home" style={{fontSize: "50px", color: "#ffffff", textDecoration: 'none' }}> Home </Link>
           <Link to= "/about" style={{fontSize: "50px", color: "#ffffff", textDecoration: 'none' }}> About </Link>
           <Link to= "/portfolio" style={{fontSize: "50px", color: "#ffffff", textDecoration: 'none' }}> Portfolio </Link>
