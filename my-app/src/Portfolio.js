@@ -23,10 +23,9 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <div className= 'portolioPage'>
-        <span id='outerSpans'> Web Development</span>
+      <div className= 'portfolioPage'>
         <div className= 'demoVideo'>
-
+          <span id='outerSpans'> Web Development</span>
           <div className='innerDemo'>
               <div className= 'description'>
                 <span> Chicken Fish or Steak </span>
@@ -37,10 +36,9 @@ class Portfolio extends Component {
               <div className="embed-responsive embed-responsive-21by9">
                 <video width="560" height="315" controls  src={require("./ChickenFishSteak.1.mp4")}  autoplay={false} />
               </div>
+              {this.state.processChicken && <ChickenProcess />}
           </div>
-          <div>
-            {this.state.processChicken && <ChickenProcess />}
-          </div>
+
           <div className='innerDemo'>
               <div className= 'description'>
                 <span> PoV </span>
@@ -51,15 +49,14 @@ class Portfolio extends Component {
               <div className="embed-responsive embed-responsive-21by9">
                 <video width="560" height="315" controls src={require("./PoV.mov")}  />
               </div>
+              {this.state.processPov && <PovProcess />}
           </div>
-          <div>
-            {this.state.processPov && <PovProcess />}
-          </div>
+
+
         </div>
-        <span id='outerSpans'> Graphic Design </span>
 
         <div id="carouselExampleIndicators" className="carousel-slide" data-ride="carousel">
-
+          <span id='outerSpans'> Graphic Design </span>
           <div className="carousel-inner">
             <div className="carousel-item active" data-interval="500">
               <img src={require('./cards.jpg')} className="d-block w-100" alt="..."/>
@@ -94,7 +91,6 @@ class Portfolio extends Component {
               <img src={require('./katelyn.png')} className="d-block w-100" alt="..." />
             </div>
           </div>
-
         </div>
 
       </div>

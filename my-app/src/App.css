@@ -55,8 +55,12 @@
   font-family: 'Montserrat', sans-serif;
   margin-top: 40%;
 }
-
-.portolioPage span {
+.portfolioPage {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 1000px;
+}
+.portfolioPage span {
   font-size: 10em;
   font-family: 'Montserrat', sans-serif;
 }
@@ -90,9 +94,9 @@
   z-index: 2;
 }
 #outerSpans {
-  margin-top: 10%;
+  /* margin-top: 10%; */
   font-weight: bold;
-  margin-left: 35%;
+  /* margin-left: 35%; */
 }
 .embed-responsive embed-responsive-21by9 {
   display: grid;
@@ -107,7 +111,7 @@
   z-index: -1;
   margin: auto;
    width: 50%;
-   background-color: #231f20;
+   /* background-color: #231f20; */
    /* padding: 30px; */
 
 }
@@ -125,6 +129,10 @@
   display: grid;
   grid-template-columns: auto auto auto;
 } */
+.chickenProcess {
+  display: grid;
+  grid-template-columns: auto auto;
+}
 .carousel-item {
   height: 100%;
 }
