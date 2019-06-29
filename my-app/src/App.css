@@ -52,13 +52,14 @@
 }
 .homeInner span {
   font-size: 10em;
-  font-family: Major Mono Display;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 40%;
 }
-/* .portolioPage {
-  display: grid;
-  grid-template-rows: auto 400px auto;
-} */
+
+.portolioPage span {
+  font-size: 10em;
+  font-family: 'Montserrat', sans-serif;
+}
 .about {
   padding: 10%;
   display: grid;

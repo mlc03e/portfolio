@@ -22,7 +22,7 @@ goToAbout= () => {
 
         <div className='homeInner' onClick={this.goToPortfolio}>
         {this.state.showPortfolio && <Redirect to="/portfolio" />}
-        <span style={{marginLeft: '40%'}}> designer </span>
+        <span style={{marginLeft: '50%'}}> designer </span>
 
         </div>
         <div className='homeInner'>

@@ -8,7 +8,7 @@ class Portfolio extends Component {
   render() {
     return (
       <div className= 'portolioPage'>
-        <span> Web Development/App Design</span>
+        <span> Web Development/ App Design</span>
         <div className= 'demoVideo'>
           <div className="embed-responsive embed-responsive-21by9">
             <video width="560" height="315" controls  src={require("./ChickenFishSteak.1.mp4")}  autoplay={false} />
@@ -31,10 +31,10 @@ class Portfolio extends Component {
             <p> JSON databse React frontend </p>
           </div>
         </div>
-        <h1> Graphic Design </h1>
+        <span> Graphic Design </span>
 
         <div id="carouselExampleIndicators" className="carousel-slide" data-ride="carousel">
-          
+
           <div className="carousel-inner">
             <div className="carousel-item active" data-interval="500">
               <img src={require('./cards.jpg')} className="d-block w-100" alt="..."/>
