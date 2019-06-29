@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import ProcessCard from './ProcessCard'
+import PovProcess from './PovProcess';
+import ChickenProcess from './ChickenProcess'
 
 
 // import { Player } from 'video-react';
@@ -38,7 +39,7 @@ class Portfolio extends Component {
               </div>
           </div>
           <div>
-            {this.state.processChicken && <ProcessCard />}
+            {this.state.processChicken && <ChickenProcess />}
           </div>
           <div className='innerDemo'>
               <div className= 'description'>
@@ -52,7 +53,7 @@ class Portfolio extends Component {
               </div>
           </div>
           <div>
-            {this.state.processPov && <ProcessCard />}
+            {this.state.processPov && <PovProcess />}
           </div>
         </div>
         <span id='outerSpans'> Graphic Design </span>
