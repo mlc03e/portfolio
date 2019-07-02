@@ -13,10 +13,11 @@ class Portfolio extends Component {
   }
   showProcess= (demo) => {
     if (demo === 'chicken') {
-      this.setState({processChicken: true})
+      this.setState({processChicken: !this.state.processChicken})
+
     }
     if (demo === 'pov') {
-      this.setState({processPov: true})
+      this.setState({processPov: !this.state.processPov})
     }
 
   }
@@ -28,23 +29,25 @@ class Portfolio extends Component {
           <span id='outerSpans'> Web Development</span>
           <div className='innerDemo'>
               <div className= 'description'>
-                <span> Chicken Fish or Steak </span>
-                <p> Creates virtual guest books for weddings. Couples can invite guests who can share comments and photos.</p>
-                <p> Rails backend React frontend Cloudinary API</p>
-                <button type="button" class="btn btn-outline-dark" onClick={()=>this.showProcess('chicken')}>Learn More</button>
+
+              <span > Chicken Fish or Steak </span>
+                <p > Creates virtual guest books for weddings. Couples can invite guests who can share comments and photos.</p>
+                <p > Rails backend React frontend Cloudinary API</p>
+                <button type="button" class="btn btn-dark btn-block" onClick={()=>this.showProcess('chicken')} >Learn More</button>
+
               </div>
               <div className="embed-responsive embed-responsive-21by9">
                 <video width="560" height="315" controls  src={require("./ChickenFishSteak.1.mp4")}  autoplay={false} />
               </div>
-              {this.state.processChicken && <ChickenProcess />}
           </div>
+          {this.state.processChicken && <ChickenProcess />}
 
           <div className='innerDemo'>
               <div className= 'description'>
                 <span> PoV </span>
                 <p> A platform where clothing stylists can put together their clients’ ideas through a visual moodboard.</p>
                 <p> JSON databse React frontend </p>
-                <button type="button" class="btn btn-outline-dark" onClick={()=>this.showProcess('pov')}>Learn More</button>
+                <button type="button" class="btn btn-dark btn-block" onClick={()=>this.showProcess('pov')}>Learn More</button>
               </div>
               <div className="embed-responsive embed-responsive-21by9">
                 <video width="560" height="315" controls src={require("./PoV.mov")}  />

@@ -5,7 +5,7 @@ class ChickenProcess extends Component {
   render() {
     return (
       <div>
-        <h1> ChickenProcess </h1>
+
         <div className='chickenProcess'>
           <img src={require('./Chicken1.png')} className="d-block w-100" alt="..."/>
           <img src={require('./Chicken2.png')} className="d-block w-100" alt="..."/>

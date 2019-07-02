@@ -74,20 +74,22 @@
   border-radius: 2em;
 }
 .demoVideo {
-  padding: 5%;
+  /* padding: 5%; */
   padding-left: 15%;
   padding-right: 15%;
   display: grid;
   /* grid-template-columns: auto auto; */
   grid-column-gap: 15px;
   grid-auto-rows: auto auto;
-  grid-row-gap: 10%;
+  grid-row-gap: 5%;
 }
 .innerDemo {
   display: grid;
+  /* grid-column: 2/ 1; */
   grid-template-columns: 20% auto;
   grid-column-gap: 10px;
   grid-template-row: auto auto;
+  /* grid-row: 1/ 2; */
 }
 .btn-outline-dark {
   width: 100%;
@@ -104,7 +106,13 @@
   grid-row-gap: 15px;
 }
 .description {
+  /* display: grid;
+  grid-template-rows: auto auto auto auto; */
+height: 50%;
+vertical-align: text-bottom;
+line-height: 3em;
 
+/* align-content: space-around; */
 }
 .carousel-slide {
   /* position: absolute; */
