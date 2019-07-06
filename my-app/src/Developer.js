@@ -19,7 +19,7 @@ class Developer extends Component {
   }
   render() {
     return (
-      <div>
+      <div className= 'portfolioPage'>
       <div className= 'demoVideo'>
         <span id='outerSpans'> Web Development</span>
         <div className='innerDemo'>
