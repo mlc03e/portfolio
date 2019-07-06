@@ -6,7 +6,7 @@ import NavBar from './NavBar'
 import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 import About from './About'
 import Portfolio from './Portfolio'
-
+import Developer from './Developer'
 
 import React, { Component } from 'react';
 
@@ -21,6 +21,7 @@ class App extends Component {
         <Route path="/home" exact component={Home}/>
         <Route path="/about" exact component={About}/>
         <Route path="/portfolio" exact component={Portfolio}/>
+        <Route path="/developer" exact component={Developer}/>
         </>
       </div>
     );
