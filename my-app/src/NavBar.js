@@ -15,11 +15,16 @@ class NavBar extends Component {
         <img src= {require("./mc-logo.svg") } onClick={this.goHome}/>
         {this.state.home && <Redirect to="/home" />}
         <div className='links'>
-          <Link to= "/about" style={{fontSize: "70px", color: "#000000", textDecoration: 'none' }}> About </Link>
-          <Link to= "/designer" style={{fontSize: "70px", color: "#000000", textDecoration: 'none' }}> Designer </Link>
-          <Link to= "/developer" style={{fontSize: "70px", color: "#000000", textDecoration: 'none' }}> Developer </Link>
+          <Link to= "/about" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> About </Link>
+          <Link to= "/designer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Designer </Link>
+          <Link to= "/developer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Developer </Link>
+          <Link to= "/developer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Resume </Link>
         </div>
-
+        <div className= 'infoLinks'>
+          <img src= {require("./github.svg") } width= '200px' style={{borderRadius: '7em'}} onClick={this.goHome}/>
+          <img src= {require("./medium.svg") } width= '220px' style={{borderRadius: '7em'}} onClick={this.goHome}/>
+          <img src= {require("./linkedin.svg") } width= '200px' style={{borderRadius: '7em'}} onClick={this.goHome}/>
+        </div>
       </div>
     );
   }

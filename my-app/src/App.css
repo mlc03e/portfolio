@@ -28,10 +28,16 @@
   /* background-color: #231f20; */
   background-color: #287272;
   display: grid;
-  grid-template-columns: 10%  auto;
+  grid-template-columns: auto 30% auto;
 
 }
-
+.infoLinks {
+  /* display: grid;
+  grid-template-columns: auto auto auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 .navBar img:hover {
   background-color: #FF8B8B;
 }
@@ -40,11 +46,14 @@
   /* border-radius: 2em; */
 
 }
-.links {
-  display: inline-block;
-  text-align: right;
-  margin-top: 6%;
-
+.links  {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 15%;
+}
+.links a:hover {
+  color: #FF8B8B;
 }
 .homeOutter {
   padding-top: 10%;
