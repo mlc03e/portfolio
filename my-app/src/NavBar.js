@@ -3,11 +3,18 @@ import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom
 
 class NavBar extends Component {
   state={
-    home: false
+    home: false,
+    git: false
   }
 
   goHome= () => {
     this.setState({home:true})
+  }
+  goLink= (goTo) => {
+    console.log(goTo);
+    if (goTo=== 'gitHub'){
+      this.setState({git: true})
+    }
   }
   render() {
     return (
@@ -18,13 +25,14 @@ class NavBar extends Component {
           <Link to= "/about" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }} className='link'> About </Link>
           <Link to= "/designer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Designer </Link>
           <Link to= "/developer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Developer </Link>
-          <Link to= "/developer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Resume </Link>
+          <Link to= "/resume" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Resume </Link>
         </div>
         <div className= 'infoLinks'>
-          <img src= {require("./github.svg") } width= '200px' style={{borderRadius: '7em'}} onClick={this.goHome}/>
-          <img src= {require("./medium.svg") } width= '220px' style={{borderRadius: '7em'}} onClick={this.goHome}/>
-          <img src= {require("./linkedin.svg") } width= '200px' style={{borderRadius: '7em'}} onClick={this.goHome}/>
+          <a href= {'https://github.com/mlc03e'}><img src= {require("./github.svg") } width= '200px' style={{borderRadius: '7em'}} /></a>
+          <a href= {'https://medium.com/@mlc03e'}><img src= {require("./medium.svg") } width= '220px' style={{borderRadius: '7em'}} onClick={this.goHome}/></a>
+          <a href= {'https://www.linkedin.com/in/meghan-campbell646/'}><img src= {require("./linkedin.svg") } width= '200px' style={{borderRadius: '7em'}} onClick={this.goHome}/></a>
         </div>
+
       </div>
     );
   }

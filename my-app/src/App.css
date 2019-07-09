@@ -95,6 +95,11 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 15px;
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
+}
+.resume {
+  margin-left: 30%;
 }
 .img-thumbnail {
   border-radius: 2em;
