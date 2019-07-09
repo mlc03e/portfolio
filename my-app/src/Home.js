@@ -21,14 +21,14 @@ goToAbout= () => {
       <div className='homeOutter'>
         <div className='homeInner' onClick={this.goToPortfolio}>
           {this.state.showPortfolio && <Redirect to="/portfolio" />}
-          <span style={{marginLeft: '50%'}}> designer </span>
+          <span > designer </span>
         </div>
         <div className='homeInner'>
           <img src= {require('./web-pic.svg')} />
         </div>
         <div className='homeInner' onClick={this.goToAbout}>
           {this.state.showAbout && <Redirect to="/developer" />}
-          <span style={{marginLeft: '5%'}}>  developer  </span>
+          <span >  developer  </span>
         </div>
       </div>
     );
