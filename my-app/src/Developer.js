@@ -10,12 +10,10 @@ class Developer extends Component {
   showProcess= (demo) => {
     if (demo === 'chicken') {
       this.setState({processChicken: !this.state.processChicken})
-
     }
     if (demo === 'pov') {
       this.setState({processPov: !this.state.processPov})
     }
-
   }
   render() {
     return (

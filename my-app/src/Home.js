@@ -19,21 +19,17 @@ goToAbout= () => {
   render() {
     return (
       <div className='homeOutter'>
-
         <div className='homeInner' onClick={this.goToPortfolio}>
-        {this.state.showPortfolio && <Redirect to="/portfolio" />}
-        <span style={{marginLeft: '50%'}}> designer </span>
-
+          {this.state.showPortfolio && <Redirect to="/portfolio" />}
+          <span style={{marginLeft: '50%'}}> designer </span>
         </div>
         <div className='homeInner'>
-          <img src= 'https://www.frogdesign.com/wp-content/uploads/2018/11/Amrita-Marino-FrogDesign-TechTrendsHeader-1440x810-1024x576.gif' />
+          <img src= {require('./web-pic.svg')} />
         </div>
         <div className='homeInner' onClick={this.goToAbout}>
-        {this.state.showAbout && <Redirect to="/developer" />}
-
-        <span style={{marginLeft: '5%'}}>  developer  </span>
+          {this.state.showAbout && <Redirect to="/developer" />}
+          <span style={{marginLeft: '5%'}}>  developer  </span>
         </div>
-
       </div>
     );
   }

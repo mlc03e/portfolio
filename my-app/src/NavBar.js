@@ -15,7 +15,7 @@ class NavBar extends Component {
         <img src= {require("./mc-logo.svg") } onClick={this.goHome}/>
         {this.state.home && <Redirect to="/home" />}
         <div className='links'>
-          <Link to= "/about" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> About </Link>
+          <Link to= "/about" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }} className='link'> About </Link>
           <Link to= "/designer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Designer </Link>
           <Link to= "/developer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Developer </Link>
           <Link to= "/developer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Resume </Link>
