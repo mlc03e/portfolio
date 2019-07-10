@@ -17,13 +17,12 @@ class Developer extends Component {
   }
   render() {
     return (
-      <div className= 'portfolioPage'>
+      <div className= 'developerPage'>
       <div className= 'demoVideo'>
         <span id='outerSpans'> Web Development</span>
         <div className='innerDemo'>
             <div className= 'description'>
-
-            <span > Chicken Fish or Steak </span>
+            <span >Chicken Fish or Steak </span>
               <p > Creates virtual guest books for weddings. Couples can invite guests who can share comments and photos.</p>
               <p > Rails backend React frontend Cloudinary API</p>
               <button type="button" class="btn btn-dark btn-block" onClick={()=>this.showProcess('chicken')} >Learn More</button>

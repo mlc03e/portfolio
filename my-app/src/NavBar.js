@@ -10,16 +10,18 @@ class NavBar extends Component {
   goHome= () => {
     this.setState({home:true})
   }
-  goLink= (goTo) => {
-    console.log(goTo);
-    if (goTo=== 'gitHub'){
-      this.setState({git: true})
-    }
-  }
+  // goLink= (goTo) => {
+  //   console.log(goTo);
+  //   if (goTo=== 'gitHub'){
+  //     this.setState({git: true})
+  //   }
+  // }
   render() {
     return (
       <div className='navBar'>
-        <img src= {require("./mc-logo.svg") } onClick={this.goHome}/>
+        <div id='logo'>
+          <img  src= {require("./mc-logo.svg") } onClick={this.goHome}/>
+        </div>
         {this.state.home && <Redirect to="/home" />}
         <div className='links'>
           <Link to= "/about" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }} className='link'> About </Link>
@@ -28,9 +30,9 @@ class NavBar extends Component {
           <Link to= "/resume" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Resume </Link>
         </div>
         <div className= 'infoLinks'>
-          <a href= {'https://github.com/mlc03e'}><img src= {require("./github.svg") } width= '200px' style={{borderRadius: '7em'}} /></a>
-          <a href= {'https://medium.com/@mlc03e'}><img src= {require("./medium.svg") } width= '220px' style={{borderRadius: '7em'}} onClick={this.goHome}/></a>
-          <a href= {'https://www.linkedin.com/in/meghan-campbell646/'}><img src= {require("./linkedin.svg") } width= '200px' style={{borderRadius: '7em'}} onClick={this.goHome}/></a>
+          <a href= {'https://github.com/mlc03e'}><img src= {require("./github.svg") } height= '200px'  /></a>
+          <a href= {'https://medium.com/@mlc03e'}><img src= {require("./medium.svg") } height= '200px' /></a>
+          <a id= 'linkedin' href= {'https://www.linkedin.com/in/meghan-campbell646/'}><img src= {require("./linkedin.svg") } height= '200px' /></a>
         </div>
 
       </div>

@@ -20,7 +20,7 @@ goToAbout= () => {
     return (
       <div className='homeOutter'>
         <div className='homeInner' onClick={this.goToPortfolio}>
-          {this.state.showPortfolio && <Redirect to="/portfolio" />}
+          {this.state.showPortfolio && <Redirect to="/designer" />}
           <span > designer </span>
         </div>
         <div className='homeInner'>
