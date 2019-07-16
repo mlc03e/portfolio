@@ -69,10 +69,49 @@ class Portfolio extends Component {
         <video width="560" height="315" controls src={require("./videos/central-park.mp4")}  />
       </div>
       <div className="embed-responsive embed-responsive-21by9">
-        <video width="560" height="315" controls src={require("./videos/BoysAtlanticBroadband.mp4")}  />
+        <video width="560" height="315" controls src={require("./videos/CNNTheHuntwithJohnWalsh.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/DuckQuacksDontEcho.mp4")}  />
       </div>
       <div className="embed-responsive embed-responsive-21by9">
         <video width="560" height="315" controls src={require("./videos/EpicHistory.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/Ford.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/Geico.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/Grey_Goose.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/Insurance.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/LittleCaesars.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/Marshalls.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/MTV.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/NotWavingButDrowning.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/OrganicBalance.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/StateFarm.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/Verizon.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/yogurt.mp4")}  />
       </div>
       </div>
 
