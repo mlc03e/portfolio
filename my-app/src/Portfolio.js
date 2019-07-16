@@ -63,6 +63,9 @@ class Portfolio extends Component {
         </div>
       </div>}
       <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/AimeeMannLabrador.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
         <video width="560" height="315" controls src={require("./videos/BoysAtlanticBroadband.mp4")}  />
       </div>
       <div className="embed-responsive embed-responsive-21by9">
