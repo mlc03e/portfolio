@@ -66,6 +66,9 @@ class Portfolio extends Component {
         <video width="560" height="315" controls src={require("./videos/AimeeMannLabrador.mp4")}  />
       </div>
       <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/AimeeMannCharmer.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
         <video width="560" height="315" controls src={require("./videos/BoysAtlanticBroadband.mp4")}  />
       </div>
       <div className="embed-responsive embed-responsive-21by9">
@@ -106,6 +109,9 @@ class Portfolio extends Component {
       </div>
       <div className="embed-responsive embed-responsive-21by9">
         <video width="560" height="315" controls src={require("./videos/OrganicBalance.mp4")}  />
+      </div>
+      <div className="embed-responsive embed-responsive-21by9">
+        <video width="560" height="315" controls src={require("./videos/RealEstate.mp4")}  />
       </div>
       <div className="embed-responsive embed-responsive-21by9">
         <video width="560" height="315" controls src={require("./videos/StateFarm.mp4")}  />
