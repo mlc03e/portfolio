@@ -1,1 +1,6 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
+my-app/src/videos/AimeeMannCharmer.mp4 filter=lfs diff=lfs merge=lfs -text
+my-app/src/videos/AimeeMannLabrador.mp4 filter=lfs diff=lfs merge=lfs -text
+my-app/src/videos/RealEstate.mp4 filter=lfs diff=lfs merge=lfs -text
+src/videos/AimeeMannCharmer.mp4 filter=lfs diff=lfs merge=lfs -text
+src/videos/Labrador.mp4 filter=lfs diff=lfs merge=lfs -text
+src/videos/RealEstate.mp4 filter=lfs diff=lfs merge=lfs -text

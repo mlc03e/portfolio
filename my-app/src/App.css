@@ -99,8 +99,9 @@
 .portfolioPage {
   margin-top: 5%;
   display: grid;
+  grid-template-rows: auto auto;
   /* grid-template-columns: 20% auto 20%; */
-  /* grid-row-gap: 1000px; */
+  grid-row-gap: 10%;
  }
  .developerPage span {
    font-size: 10em;
@@ -225,6 +226,51 @@ line-height: 3em;
   /* grid-template-columns: auto auto; */
   grid-template-rows: auto auto;
   grid-row-gap: 10px;
+}
+.costumeVideos {
+  /* padding: 5%; */
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  /* grid-gap: 10px; */
+
+}
+.wrapper {
+  font-family: inherit;
+  width: 70%;
+  margin: 0 auto;
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* background-color: blue; */
+}
+video {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+.content {
+  position: absolute;
+  top:45%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 3.5em;
+}
+.overlay  {
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right:0;
+  height: 80%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: blue;
+}
+.wrapper :hover .overlay {
+  opacity: 1;
 }
 @keyframes App-logo-spin {
   from {
