@@ -164,11 +164,11 @@
   font-weight: bold;
   margin-left: 25%;
 }
-.embed-responsive embed-responsive-21by9 {
+/* .embed-responsive embed-responsive-21by9 {
   display: grid;
   grid-template-rows: 80% auto;
   grid-row-gap: 15px;
-}
+} */
 .description {
   /* display: grid;
   grid-template-rows: auto auto auto auto; */
@@ -228,15 +228,19 @@ line-height: 3em;
   grid-row-gap: 10px;
 }
 .costumeVideos {
-  /* padding: 5%; */
   display: grid;
-  grid-template-columns: auto auto auto ;
-  /* grid-gap: 10px; */
-
+  grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+  width: 90%;
+  margin-left: 20%;
+}
+.costumeVideos h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
 }
 .wrapper {
   font-family: inherit;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   left: 55%;
   top: 50%;
@@ -244,11 +248,11 @@ line-height: 3em;
   /* position: absolute; */
   /* background-color: blue; */
 }
-video {
+/* video {
   display: block;
   width: 80%;
   height: auto;
-}
+} */
 .content {
   position: absolute;
   top:45%;
@@ -259,18 +263,18 @@ video {
 }
 .overlay  {
   position: absolute;
-  top: 0;
+  top: 10%;
   left:0;
   bottom: 0;
   right:0;
-  height: 80%;
+  height: 75%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background: blue;
+  transition: .10s ease;
+  background: #287272;
 }
 .wrapper :hover .overlay {
-  opacity: 1;
+  opacity: .75;
 }
 @keyframes App-logo-spin {
   from {
