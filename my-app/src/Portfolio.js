@@ -6,12 +6,18 @@ import React, { Component } from 'react';
 
 class Portfolio extends Component {
 
+
   state= {
     // idx: 0
-    refresh: false
+    refresh: false,
+    play: null
   }
+  // let play= autoplay
   play=()=> {
     console.log('play');
+    const play= "autoplay"
+    // this.setState({play: autoplay})
+  return play
   }
   //
   // images= ['./cards.jpg', './campbell1.jpg', './campbell2.jpg','./campbell3.jpg', './cryro1.png', './chrisCardFront.png', './chrisCardBack.png', './cryro2.png', './play.png', './katelyn.png' ]
@@ -69,7 +75,7 @@ class Portfolio extends Component {
     <div className= 'costumeVideos'>
       <div className='wrapper'>
         <div className="embed-responsive embed-responsive-21by9">
-          <video width="560" height="315" controls src={require("./videos/AimeeMannLabrador.mp4") }  />
+          <video width="560" height="315" controls autoplay src={require("./videos/AimeeMannLabrador.mp4") }  />
             <div className= 'overlay' onClick= {this.play} >
               <div className= 'content'>
                 <h1>Music Video</h1>
