@@ -20,7 +20,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
 .App-link {
   color: #61dafb;
 }
@@ -101,7 +107,7 @@
   display: grid;
   grid-template-rows: auto auto;
   /* grid-template-columns: 20% auto 20%; */
-  grid-row-gap: 10%;
+  grid-row-gap: 7%;
  }
  .developerPage span {
    font-size: 10em;
@@ -166,7 +172,7 @@
 #outerSpans {
   margin-top: 10%;
   font-weight: bold;
-  margin-left: 25%;
+  margin-left: 35%;
 }
 /* .embed-responsive embed-responsive-21by9 {
   display: grid;
@@ -236,7 +242,8 @@ line-height: 3em;
   grid-template-columns: auto auto auto;
   grid-gap: 15px;
   width: 80%;
-  margin-left: 20%;
+  margin-left: 23%;
+  margin-top: 7%;
 }
 .costumeVideos h1 {
   font-family: 'Montserrat', sans-serif;
