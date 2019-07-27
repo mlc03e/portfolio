@@ -40,15 +40,16 @@ class Portfolio extends Component {
           <span id='outerSpans'> Graphic Design </span>
           <div className='graphicDesign'>
             <div className='arrows'>
-              {this.state.idx > 0 ? <img src={require('./arrow-left.svg')} width='200px' alt="..." onClick={this.leftArrow}/>: <img src={require('./arrow-left.svg')} width='200px' alt="..." />}
+              {this.state.idx > 0 ? <img src={require('./arrow-left.svg')} width='200px' alt="..." onClick={this.leftArrow}/>: <img src={require('./arrow-left-disabled.svg')} width='200px' alt="..." />}
             </div>
             <div className= 'center'>
               <img src={require(`${this.images[this.state.idx]}`)}  alt="..."/>
             </div>
             <div className='arrows'>
-              {this.state.idx < this.images.length -1 ? <img src={require('./arrow-right.svg')} width='200px' alt="..." onClick={this.rightArrow}/> : <img src={require('./arrow-right.svg')} width='200px' alt="..." />}
+              {this.state.idx < this.images.length -1 ? <img src={require('./arrow-right.svg')} width='200px' alt="..." onClick={this.rightArrow}/> : <img src={require('./arrow-right-disabled.svg')} width='200px' alt="..." />}
             </div>
           </div>
+
         </div>
     <div >
       <span id='outerSpans'> Costume Design </span>
