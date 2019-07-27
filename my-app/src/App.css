@@ -109,6 +109,12 @@
   /* grid-template-columns: 20% auto 20%; */
   grid-row-gap: 7%;
  }
+ #description {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 4em;
+   display: flex;
+   justify-content: center;
+ }
  .developerPage span {
    font-size: 10em;
    font-family: 'Montserrat', sans-serif;
@@ -120,15 +126,17 @@
 .portfolioPage span {
   font-size: 10em;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 20%;
+  
   /* display: flex;
   justify-content:center; */
 }
-/* .center {
-
-} */
+.center {
+  display: flex;
+  justify-content: center;
+}
 .arrows {
-  /* margin-top: 40%; */
+  display: flex;
+  justify-content: center;
 }
 .about {
   padding: 10%;
@@ -170,9 +178,10 @@
   z-index: 2;
 }
 #outerSpans {
-  margin-top: 10%;
+  /* margin-top: 10%; */
   font-weight: bold;
-  margin-left: 35%;
+  display: flex;
+  justify-content: center;
 }
 /* .embed-responsive embed-responsive-21by9 {
   display: grid;
@@ -205,7 +214,7 @@ line-height: 3em;
   justify-content: center; */
   display: grid;
   grid-template-columns: auto 60% auto;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 
 /* .carousel-slide img {

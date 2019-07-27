@@ -20,7 +20,7 @@ class Portfolio extends Component {
     // const autoPlay= autoPlay
   }
   //
-  images= ['./cards.jpg', './campbell1.jpg', './campbell2.jpg','./campbell3.jpg', './cryro1.png', './chrisCardFront.png', './chrisCardBack.png', './cryro2.png', './play.png', './katelyn.png' ]
+  images= [{img: './cards.jpg', description: 'Adobe Illustrator'}, {img:'./campbell1.jpg', description: 'Adobe PhotoShop & InDesign'}, {img:'./campbell2.jpg', description: 'Adobe PhotoShop & InDesign'}, {img:'./campbell3.jpg', description: 'Adobe PhotoShop & InDesign'}, {img:'./cryro1.png', description: 'Adobe Illustrator'}, {img:'./chrisCardFront.png', description: 'Adobe Illustrator'}, {img:'./chrisCardBack.png', description: 'Adobe Illustrator'}, {img:'./cryro2.png', description: 'Adobe Illustrator'}, {img:'./play.png', description: 'Adobe PhotoShop & Illustrator'}, {img:'./katelyn.png', description: 'Adobe PhotoShop & Illustrator'}]
   //
   leftArrow= () => {
     this.setState({idx: this.state.idx - 1})
@@ -37,13 +37,16 @@ class Portfolio extends Component {
     return (
       <div className= 'portfolioPage'>
         <div>
-          <span id='outerSpans'> Graphic Design </span>
+          <div>
+            <span id='outerSpans'> Graphic Design </span>
+            <h1 id='description'>{`${this.images[this.state.idx].description}`}</h1>
+          </div>
           <div className='graphicDesign'>
             <div className='arrows'>
               {this.state.idx > 0 ? <img src={require('./arrow-left.svg')} width='200px' alt="..." onClick={this.leftArrow}/>: <img src={require('./arrow-left-disabled.svg')} width='200px' alt="..." />}
             </div>
             <div className= 'center'>
-              <img src={require(`${this.images[this.state.idx]}`)}  alt="..."/>
+              <img src={require(`${this.images[this.state.idx].img}`)}  alt="..."/>
             </div>
             <div className='arrows'>
               {this.state.idx < this.images.length -1 ? <img src={require('./arrow-right.svg')} width='200px' alt="..." onClick={this.rightArrow}/> : <img src={require('./arrow-right-disabled.svg')} width='200px' alt="..." />}
