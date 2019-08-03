@@ -6,6 +6,7 @@ class PovProcess extends Component {
     return (
       <div>
         <h1> Wire-frame </h1>
+        <h1> test</h1>
         <img src={require('./povWireframe.png')}  alt="..."/>
         <img src={require('./componentTree.png')}  alt="..."/>
       </div>
