@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://meghancampbelldesigns.com/portfolio",
+  /* "homepage": "https://meghancampbelldesigns.com/portfolio", */
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -12,8 +12,8 @@
     "video-react": "^0.13.7"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    /* "predeploy": "npm run build",
+    "deploy": "gh-pages -d build", */
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,8 +33,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
   }
+  /* "devDependencies": {
+    "gh-pages": "^2.1.1"
+  } */
 }
