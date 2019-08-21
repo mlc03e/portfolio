@@ -91,6 +91,7 @@
 } */
 .homeInner img {
   width: 100%;
+  /* justify-content: : */
 }
 .homeInner span {
   font-size: 10em;
@@ -126,7 +127,7 @@
 .portfolioPage span {
   font-size: 10em;
   font-family: 'Montserrat', sans-serif;
-  
+
   /* display: flex;
   justify-content:center; */
 }
