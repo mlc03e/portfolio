@@ -24,15 +24,15 @@ class NavBar extends Component {
         </div>
         {this.state.home && <Redirect to="/" />}
         <div className='links'>
-          <Link to= "/about" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }} className='link'> About </Link>
-          <Link to= "/designer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Designer </Link>
-          <Link to= "/developer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Developer </Link>
-          <Link to= "/resume" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Resume </Link>
+          <Link to= "/about" style={{fontSize: "20px", color: "#ffffff", textDecoration: 'none' }} className='link'> About </Link>
+          <Link to= "/designer" style={{fontSize: "20px", color: "#ffffff", textDecoration: 'none' }}> Designer </Link>
+          <Link to= "/developer" style={{fontSize: "20px", color: "#ffffff", textDecoration: 'none' }}> Developer </Link>
+          <Link to= "/resume" style={{fontSize: "20px", color: "#ffffff", textDecoration: 'none' }}> Resume </Link>
         </div>
         <div className= 'infoLinks'>
-          <a href= {'https://github.com/mlc03e'}><img src= {require("./github.svg") } height= '200px'  /></a>
-          <a href= {'https://medium.com/@mlc03e'}><img src= {require("./medium.svg") } height= '200px' /></a>
-          <a id= 'linkedin' href= {'https://www.linkedin.com/in/meghan-campbell646/'}><img src= {require("./linkedin.svg") } height= '200px' /></a>
+          <a href= {'https://github.com/mlc03e'}><img src= {require("./github.svg") }   /></a>
+          <a href= {'https://medium.com/@mlc03e'}><img src= {require("./medium.svg") } id='medium'/></a>
+          <a id= 'linkedin' href= {'https://www.linkedin.com/in/meghan-campbell646/'}><img src= {require("./linkedin.svg") } /></a>
         </div>
 
       </div>

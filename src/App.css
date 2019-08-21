@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 .App {
   text-align: center;
 }
@@ -22,7 +23,7 @@
 }
 @viewport {
   width: device-width ;
-  zoom: 1.0 ;
+  zoom: 1.0;
 }
 @-ms-viewport {
   width: device-width ;
@@ -43,8 +44,9 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 15%;
-  padding: 2%;
+  align-items: center;
+  /* margin-top: 10%; */
+  /* padding: 2%; */
 }
 /* #linkedin {
   margin: 1%;
@@ -55,12 +57,17 @@
     brightness(1);
 }
 #logo {
-  margin-top: 1%;
+  /* margin-top: 5%; */
+  display: flex;
+  align-items: center;
 }
 #logo img:hover {
   /* background-color: #FF8B8B; */
   filter: invert(0.55) sepia(1.5) hue-rotate(310deg) saturate(2)
     brightness(1.3);
+}
+#medium {
+  margin-top: 2%;
 }
 .navBar img {
   background-color: #yellow;
@@ -94,7 +101,7 @@
   /* justify-content: : */
 }
 .homeInner span {
-  font-size: 10em;
+  font-size: 2em;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
@@ -112,20 +119,20 @@
  }
  #description {
    font-family: 'Montserrat', sans-serif;
-   font-size: 4em;
+   font-size: 2em;
    display: flex;
    justify-content: center;
  }
  .developerPage span {
-   font-size: 10em;
+   font-size: 2em;
    font-family: 'Montserrat', sans-serif;
  }
  .portfolioPage img {
-   height: 2000px;
+   /* height: 2000px; */
    max-width: 100%;
  }
 .portfolioPage span {
-  font-size: 10em;
+  font-size: 2em;
   font-family: 'Montserrat', sans-serif;
 
   /* display: flex;
@@ -144,11 +151,11 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 15px;
-  font-size: 4em;
+  font-size: 1em;
   font-family: 'Montserrat', sans-serif;
 }
 #name {
-  font-size: 3em;
+  font-size: 2em;
 }
 .resume {
   margin-left: 30%;
@@ -257,7 +264,7 @@ line-height: 3em;
 }
 .costumeVideos h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
+  font-size: .5em;
 }
 .wrapper {
   font-family: inherit;
@@ -280,7 +287,7 @@ line-height: 3em;
   left:50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
-  font-size: 3.5em;
+  font-size: 1.5em;
 }
 .overlay  {
   position: absolute;
