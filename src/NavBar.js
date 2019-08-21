@@ -22,7 +22,7 @@ class NavBar extends Component {
         <div id='logo'>
           <img  src= {require("./mc-logo.svg") } onClick={this.goHome}/>
         </div>
-        {this.state.home && <Redirect to="/home" />}
+        {this.state.home && <Redirect to="/" />}
         <div className='links'>
           <Link to= "/about" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }} className='link'> About </Link>
           <Link to= "/designer" style={{fontSize: "70px", color: "#ffffff", textDecoration: 'none' }}> Designer </Link>
