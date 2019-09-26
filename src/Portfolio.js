@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import ReactPlayer from 'react-player';
 
 
 // import { Player } from 'video-react';
@@ -15,7 +15,7 @@ class Portfolio extends Component {
   // let play= autoplay
   play=()=> {
     console.log('play');
-    return <video width="560" height="315" src={require("./videos/AimeeMannLabrador.mp4") } autoPlay />
+    // return <video width="560" height="315" src={require("./videos/AimeeMannLabrador.mp4") } autoPlay />
     // this.setState({play: autoplay})
     // const autoPlay= autoPlay
   }
@@ -59,7 +59,7 @@ class Portfolio extends Component {
       <div className= 'costumeVideos'>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/AimeeMannLabrador.mp4") } />
+            <ReactPlayer width="560" height="315" controls url={'https://www.youtube.com/watch?v=3Uu8kJfFjXw' } />
               <div className= 'overlay' onClick= {this.play} >
                 <div className= 'content'>
                   <h1>Music Video</h1>
@@ -81,7 +81,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/BoysAtlanticBroadband.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=4RgLjrEk7Dc'/>
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -92,7 +92,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/central-park.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=MRcpVcG3I8w'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -103,7 +103,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/CNNTheHuntwithJohnWalsh.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=3N00jB3pf3M'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>TV Series</h1>
@@ -114,7 +114,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/DuckQuacksDontEcho.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=jBNbYAVypYE'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>TV Series</h1>
@@ -125,7 +125,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/EpicHistory.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=P8O5RJEkEHo'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>TV Special</h1>
@@ -136,7 +136,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/Ford.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=YM-3eLQNr1M'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -147,7 +147,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/Geico.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=kD1ttnmGRZY'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -158,7 +158,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/Grey_Goose.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=yjYAFTKuP9A'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -169,7 +169,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/Insurance.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=gw4BJBud2Vw'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -180,7 +180,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/LittleCaesars.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=QQN05SHqi6o'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -191,7 +191,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/Marshalls.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=S37dGCYthkk'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -202,7 +202,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/MTV.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=N5Nl4_oztQ0'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>TV Series</h1>
@@ -213,7 +213,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/NotWavingButDrowning.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=yLKN27QMbgI'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Feature Film</h1>
@@ -224,7 +224,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/OrganicBalance.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=hYALaG_3TTM'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -235,7 +235,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/RealEstate.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=6bASqcIe1Og'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Music Video</h1>
@@ -246,7 +246,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/StateFarm.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=B2j2wroJKeU'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -257,7 +257,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/Verizon.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=kgHXlkqwZEQ'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>
@@ -268,7 +268,7 @@ class Portfolio extends Component {
         </div>
         <div className='wrapper'>
           <div className="embed-responsive embed-responsive-21by9">
-            <video width="560" height="315" controls src={require("./videos/yogurt.mp4")}  />
+            <ReactPlayer width="560" height="315" controls url='https://www.youtube.com/watch?v=rutThKy5WeY'  />
               <div className= 'overlay'>
                 <div className= 'content'>
                   <h1>Commercial</h1>

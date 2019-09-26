@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PovProcess from './PovProcess';
 import ChickenProcess from './ChickenProcess'
+import ReactPlayer from 'react-player';
+
 
 class Developer extends Component {
   state= {
@@ -29,7 +31,7 @@ class Developer extends Component {
 
             </div>
             <div className="embed-responsive embed-responsive-21by9">
-              <video width="560" height="315" controls  src={require("./ChickenFishSteak.1.mp4")}  autoplay={false} />
+              <ReactPlayer width="560" height="315" controls  url='https://www.youtube.com/watch?v=aZose6y6Ltw'  autoplay={false} />
             </div>
         </div>
         {this.state.processChicken && <ChickenProcess />}
@@ -41,8 +43,9 @@ class Developer extends Component {
               <p> JSON databse React frontend </p>
               <button type="button" class="btn btn-dark btn-block" onClick={()=>this.showProcess('pov')}>Learn More</button>
             </div>
-            <div className="embed-responsive embed-responsive-21by9">
-              <video width="560" height="315" controls src={require("./PoV.mov")}  />
+            <div className="embed-responsive embed-responsive-21by9" >
+              <ReactPlayer  url='https://www.youtube.com/watch?v=7ptUeZNKwoY' width='100%'
+          controls />
             </div>
             {this.state.processPov && <PovProcess />}
         </div>

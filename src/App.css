@@ -101,7 +101,7 @@
   /* justify-content: : */
 }
 .homeInner span {
-  font-size: 2em;
+  font-size: calc(1em + 2.5vw);
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
